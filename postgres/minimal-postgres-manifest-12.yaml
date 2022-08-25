@@ -1,10 +1,10 @@
 apiVersion: "acid.zalan.do/v1"
 kind: postgresql
 metadata:
-  name: db-app-1
+  name: ops-app-1
   namespace: default
 spec:
-  teamId: "acid"
+  teamId: "ops"
   volume:
     size: 1Gi
   numberOfInstances: 2
