@@ -7,7 +7,7 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: argocd
+    namespace: app-1
     server: https://34.148.77.182
   project: test
   source:
