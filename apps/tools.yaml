@@ -11,7 +11,7 @@ spec:
     server: https://34.148.77.182
   project: test
   source:
-    path: overlays/staging
+    path: kami-tools
     repoURL: https://github.com/KamiHQ/kami-tools-deploy.git
     targetRevision: HEAD
   syncPolicy:
