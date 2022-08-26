@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: kami-tools-test
+  namespace: argocd
+spec:
+  destination:
+    namespace: test1
+    server: https://34.148.77.182
+  project: test
+  source:
+    path: overlays/staging
+    repoURL: https://github.com/KamiHQ/kami-tools-deploy.git
+    targetRevision: HEAD
+  syncPolicy:
+    automated:
+      prune: true
+    syncOptions:
+    - CreateNamespace=true
+  revisionHistoryLimit: 3

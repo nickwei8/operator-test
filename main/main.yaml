@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: test-apps
+spec:
+  destination:
+    namespace: default
+    server: https://34.148.77.182
+  source:
+    path: main
+    repoURL: 'https://github.com/nickwei8/operator-test.git'
+    targetRevision: HEAD
+  project: test
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
