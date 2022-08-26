@@ -7,7 +7,7 @@ spec:
     namespace: default
     server: https://34.148.77.182
   source:
-    path: main
+    path: apps
     repoURL: 'https://github.com/nickwei8/operator-test.git'
     targetRevision: HEAD
   project: test
