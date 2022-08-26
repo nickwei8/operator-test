@@ -4,7 +4,7 @@ metadata:
   name: test-apps
 spec:
   destination:
-    namespace: default
+    namespace: argocd
     server: https://34.148.77.182
   source:
     path: apps
